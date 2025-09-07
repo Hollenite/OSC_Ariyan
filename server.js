@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.post('/generate-image', async (req, res) => {
-    const apiKey = "AIzaSyDRMK5e4gxbDG66IlYfgf0Yp6mANJ3BBIg"; 
+    const apiKey = ""; 
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-preview-image-generation:generateContent?key=${apiKey}`;
     const { prompt } = req.body;
 
